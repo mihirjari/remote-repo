@@ -7,6 +7,29 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div>
+        <ul role="list">
+            <li role="listitem">Apple</li>
+            <li role="listitem">Samsung</li>
+            <li role="listitem">Google</li>
+        </ul>
+
+        <button id="btn" aria-label="click here to generate dynamic data">Click</button>
+
+        <br>
+        <p id="data"></p>
+    </div>
+
+
+    <script>
+
+        var btn = document.getElementById('btn');
+        btn.onclick = (e) => {
+
+            e.preventDefault();
+            document.getElementById('data').innerHTML = "This is dynamic content!"
+        }
+
+    </script>
 </body>
 </html>
